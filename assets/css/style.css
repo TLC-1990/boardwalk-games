@@ -22,9 +22,14 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
+   
+}
+h1, h2 {
     text-transform: uppercase;
 }
-
+h2 {
+    margin-bottom:2rem;
+}
 .sub-heading-color {
     color: var(--highlight-color);
 }
@@ -49,6 +54,20 @@ h3 {
 #header .lead {
     font-family: var(--secondary-font);
 }
+/*services*/
+#services .card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background: transparent;
+}
+#services .card {
+    margin-bottom: 1.5rem;
+}
+/*game library cards*/
+#new-games .card, 
+#fav-games .card {
+    border:none;
+}
 
 /* grid visualisation CSS for testing */
 
@@ -61,3 +80,32 @@ h3 {
     border: 2px solid white;
     background-color: lightgray;
 } */
+
+/*Media Queries*/
+/*Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) {
+    #services .card {
+        min-height: 191px;
+    }
+    
+}
+/*Large devices (laptops, 992px and up)*/
+@media screen and (min-width: 992px) {
+    #services .card {
+        min-height: auto;
+    }
+}
+
+/*xl devices (large desktops, 1200px and up)*/
+@media screen and (min-width:1200px) {
+#services .card {
+    min-height: 400px;
+}
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media screen and (min-width:1200px) {
+    #services .card {
+        min-height: 400px;
+    }
+    }
